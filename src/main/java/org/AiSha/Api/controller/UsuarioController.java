@@ -27,12 +27,6 @@ public class UsuarioController {
     
     @PostMapping()
     public boolean guardarUsr(@RequestBody Usuario user){
-        List<Usuario> lista=repo.findAll();
-        for(int i=1;i<=lista.size();i++){
-            if(lista.get(i).getCorreo().equals(user.getCorreo())){
-                return false;
-            }
-        }
         repo.save(user);
         return true;
     }
