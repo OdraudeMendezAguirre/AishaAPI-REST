@@ -20,8 +20,8 @@ public class Venta {
     @Id
     @Column(name="id_ventas")
     private int idVenta;
-    @Column(name="id_ticket")
-    private int idTicket;
+    @Column(name="id_producto")
+    private int idProducto;
 
     public int getIdVenta() {
         return idVenta;
@@ -31,13 +31,14 @@ public class Venta {
         this.idVenta = idVenta;
     }
 
-    public int getIdTicket() {
-        return idTicket;
+    public int getIdProducto() {
+        return idProducto;
     }
 
-    public void setIdTicket(int idTicket) {
-        this.idTicket = idTicket;
+    public void setIdProducto(int idProducto) {
+        this.idProducto = idProducto;
     }
+
     
     
 }

@@ -26,11 +26,6 @@ public class Ticket {
     @Column(name="ptot_ticket")
     private double total;
     
-    @Column(name="date_ticket")
-    private Date fecha;
-    
-    @Column(name="hr_ticket")
-    private Time hora;
     @Column(name="n_prod")
     private int nprod;
 
@@ -48,22 +43,6 @@ public class Ticket {
 
     public void setTotal(double total) {
         this.total = total;
-    }
-
-    public Date getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
-    }
-
-    public Time getHora() {
-        return hora;
-    }
-
-    public void setHora(Time hora) {
-        this.hora = hora;
     }
 
     public int getNprod() {
