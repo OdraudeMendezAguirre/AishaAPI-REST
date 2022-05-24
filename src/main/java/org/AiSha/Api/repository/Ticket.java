@@ -22,7 +22,7 @@ import javax.persistence.Table;
 @Table(name="ticket_tb")
 public class Ticket {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id_ticket")
     private int id;
     

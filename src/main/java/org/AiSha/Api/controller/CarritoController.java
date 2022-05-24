@@ -41,7 +41,7 @@ public class CarritoController {
     public void eliminarItem(@PathVariable int id){
         repo.deleteById(id);
     }
-    @DeleteMapping()
+    @DeleteMapping("/vaciar")
     public void vaciar(){
         repo.deleteAll();
     }
